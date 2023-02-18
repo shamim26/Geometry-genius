@@ -37,10 +37,7 @@
           </div>
           <div class="text-center space-y-4">
             <h2 id="triangle-title" class="text-2xl font-bold">Triangle</h2>
-            <p>
-              Area (A) = 0.5 x <span id="triangle-base">b</span> x
-              <span id="triangle-height">h</span>
-            </p>
+            <p>Area (A) = 0.5 x b x h</p>
             <p>
               <input
                 id="triangle-basefield"
@@ -66,16 +63,13 @@
           </div>
         </div>
         <!-- card-2 -->
-        <div class="border rounded-md py-8 px-6">
+        <div id="card2" class="border rounded-md py-8 px-6">
           <div>
             <img class="mx-auto mb-5" src="./images/rectangle.png" alt="" />
           </div>
           <div class="text-center space-y-4">
-            <h2 class="text-2xl font-bold">Rectangle</h2>
-            <p>
-              Area (A) =<span id="rectangle-width">w</span> x
-              <span id="rectangle-lenght">l</span>
-            </p>
+            <h2 id="rectangle-title" class="text-2xl font-bold">Rectangle</h2>
+            <p>Area (A) = w x l</p>
             <p>
               <input
                 id="rectangle-widthfield"
@@ -101,29 +95,28 @@
           </div>
         </div>
         <!-- card-3 -->
-        <div class="border rounded-md py-8 px-6">
+        <div id="card3" class="border rounded-md py-8 px-6">
           <div>
             <img class="mx-auto mb-5" src="./images/parallelogram.png" alt="" />
           </div>
           <div class="text-center space-y-6">
-            <h2 class="text-2xl font-bold">Parallelogram</h2>
-            <p>
-              Area (A) = <span id="parallelogram-base">b</span> x
-              <span id="parallelogram-height">h</span>
-            </p>
+            <h2 id="parallelogram-title" class="text-2xl font-bold">
+              Parallelogram
+            </h2>
+            <p>Area (A) = b x h</p>
             <p>
               <input
                 id="parallelogram-basefield"
                 class="w-1/4 bg-slate-200 rounded-md px-2 py-1"
                 type="text"
-                placeholder="b=10cm"
+                value="10"
               />
               cm
               <input
                 id="parallelogram-heightfield"
                 class="w-1/4 bg-slate-200 rounded-md px-2 py-1"
                 type="text"
-                placeholder="h=12cm"
+                value="12"
               />
               cm
             </p>
@@ -136,29 +129,26 @@
           </div>
         </div>
         <!-- card-4 -->
-        <div class="border rounded-md py-8 px-6">
+        <div id="card4" class="border rounded-md py-8 px-6">
           <div>
             <img class="mx-auto mb-5" src="./images/rhombus.png" alt="" />
           </div>
           <div class="text-center space-y-4">
-            <h2 class="text-2xl font-bold">Rhombus</h2>
-            <p>
-              Area (A) = 0.5 x <span id="rhombus-d1">d<sub>1</sub></span> x
-              <span id="rhombus-d2">d<sub>2</sub></span>
-            </p>
+            <h2 id="rhombus-title" class="text-2xl font-bold">Rhombus</h2>
+            <p>Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
             <p>
               <input
                 id="rhombus-d1field"
                 class="w-1/4 bg-slate-200 rounded-md px-2 py-1"
                 type="text"
-                placeholder="d1 = 16cm"
+                value="16"
               />
               cm
               <input
                 id="rhombus-d2field"
                 class="w-1/4 bg-slate-200 rounded-md px-2 py-1"
                 type="text"
-                placeholder="d2 = 8cm"
+                value="8"
               />
               cm
             </p>
@@ -171,29 +161,28 @@
           </div>
         </div>
         <!-- card-5 -->
-        <div class="border rounded-md py-8 px-6">
+        <div  id="card5" class="border rounded-md py-8 px-6">
           <div>
             <img class="mx-auto mb-5" src="./images/pentagon.png" alt="" />
           </div>
           <div class="text-center space-y-4">
-            <h2 class="text-2xl font-bold">Pentagon</h2>
+            <h2 id="pentagon-title" class="text-2xl font-bold">Pentagon</h2>
             <p>
-              Area (A) = 0.5 x <span id="pentagon-perimeter">p</span> x
-              <span id="pentagon-base">b</span>
+              Area (A) = 0.5 x p x b
             </p>
             <p>
               <input
                 id="pentagon-perimeterfield"
                 class="w-1/4 bg-slate-200 rounded-md px-2 py-1"
                 type="text"
-                placeholder="p = 6cm"
+                value="6"
               />
               cm
               <input
                 id="pentagon-basefield"
                 class="w-1/4 bg-slate-200 rounded-md px-2 py-1"
                 type="text"
-                placeholder="b = 10cm"
+                value="10"
               />
               cm
             </p>
@@ -206,29 +195,28 @@
           </div>
         </div>
         <!-- card-6 -->
-        <div class="border rounded-md py-8 px-6">
+        <div id="card6" class="border rounded-md py-8 px-6">
           <div>
             <img class="mx-auto mb-5" src="./images/ellipse.png" alt="" />
           </div>
           <div class="text-center space-y-5">
-            <h2 class="text-2xl font-bold">Ellipse</h2>
+            <h2 id="ellipse-title" class="text-2xl font-bold">Ellipse</h2>
             <p>
-              Area (A) = <span id="ellipse-a-axis">a</span
-              ><span id="ellipse-b-axis">b</span>
+              Area (A) = &#960;ab
             </p>
             <p>
               <input
                 id="ellipse-a-axisfield"
                 class="w-1/4 bg-slate-200 rounded-md px-2 py-1"
                 type="text"
-                placeholder="a = 10cm"
+                value="10"
               />
               cm
               <input
                 id="ellipse-b-axisfield"
                 class="w-1/4 bg-slate-200 rounded-md px-2 py-1"
                 type="text"
-                placeholder="b = 4cm"
+                value="4"
               />
               cm
             </p>
@@ -241,13 +229,12 @@
           </div>
         </div>
       </div>
-      <div class="border rounded-md w-[440px] h-[400px]">
+      <div class="border rounded-md w-[470px] h-[400px]">
         <h2 class="text-xl font-bold text-center underline mt-4">
           Area Calculation
         </h2>
         <div class="overflow-hidden">
-          <table class="mx-auto mt-3 overflow-hidden" id="results">
-          </table>
+          <table class="mx-auto mt-3 overflow-hidden" id="results"></table>
         </div>
       </div>
     </section>
