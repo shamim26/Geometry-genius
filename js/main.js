@@ -1,3 +1,8 @@
+// blog-button
+document.getElementById("btn-blog").addEventListener('click',function () {
+  window.location.href = './questions.html';
+})
+
 let serial = 0;
 
 // card - 1
