@@ -1,7 +1,7 @@
 // blog-button
-document.getElementById("btn-blog").addEventListener('click',function () {
-  window.location.href = './questions.html';
-})
+document.getElementById("btn-blog").addEventListener("click", function () {
+  window.location.href = "./questions.html";
+});
 
 let serial = 0;
 
@@ -9,7 +9,6 @@ let serial = 0;
 document
   .getElementById("triangle-calculate")
   .addEventListener("click", function () {
-    serial += 1;
     // get element
     const title = getTitle("triangle-title");
     const triangleBaseInput = getInputValue("triangle-basefield");
@@ -24,6 +23,7 @@ document
       document.getElementById("triangle-heightfield").value = "";
       return;
     }
+    serial += 1;
     // add to table
     addToTable(serial, title, triangleAreaFixed);
   });
@@ -32,7 +32,6 @@ document
 document
   .getElementById("rectangle-calculate")
   .addEventListener("click", function () {
-    serial += 1;
     // get element
     const title = getTitle("rectangle-title");
     const rectangleWidthInput = getInputValue("rectangle-widthfield");
@@ -47,6 +46,7 @@ document
       document.getElementById("rectangle-lenghtfield").value = "";
       return;
     }
+    serial += 1;
     // add to table
     addToTable(serial, title, rectangleAreaFixed);
   });
@@ -55,7 +55,6 @@ document
 document
   .getElementById("parallelogram-calculate")
   .addEventListener("click", function () {
-    serial += 1;
     // get element
     const title = getTitle("parallelogram-title");
     const parallelogramBaseInput = getInputValue("parallelogram-basefield");
@@ -70,6 +69,7 @@ document
       document.getElementById("parallelogram-heightfield").value = "";
       return;
     }
+    serial += 1;
     // add to table
     addToTable(serial, title, parallelogramAreaFixed);
   });
@@ -78,7 +78,6 @@ document
 document
   .getElementById("rhombus-calculate")
   .addEventListener("click", function () {
-    serial += 1;
     // get element
     const title = getTitle("rhombus-title");
     const rhombusD1Input = getInputValue("rhombus-d1field");
@@ -93,6 +92,7 @@ document
       document.getElementById("rhombus-d2field").value = "";
       return;
     }
+    serial += 1;
     // add to table
     addToTable(serial, title, rhombusAreaFixed);
   });
@@ -101,7 +101,6 @@ document
 document
   .getElementById("pentagon-calculate")
   .addEventListener("click", function () {
-    serial += 1;
     // get element
     const title = getTitle("pentagon-title");
     const pentagonPerimeterInput = getInputValue("pentagon-perimeterfield");
@@ -110,13 +109,13 @@ document
     const pentagonArea =
       0.5 * parseFloat(pentagonPerimeterInput) * parseFloat(pentagonBaseInput);
     const pentagonAreaFixed = pentagonArea.toFixed(2);
-
     // validation
     if (!InputValidate(pentagonPerimeterInput, pentagonBaseInput)) {
       document.getElementById("pentagon-perimeterfield").value = "";
       document.getElementById("pentagon-basefield").value = "";
       return;
     }
+    serial += 1;
     // add to table
     addToTable(serial, title, pentagonAreaFixed);
   });
@@ -125,7 +124,6 @@ document
 document
   .getElementById("ellipse-calculate")
   .addEventListener("click", function () {
-    serial += 1;
     // get element
     const title = getTitle("ellipse-title");
     const ellipseAAxisInput = getInputValue("ellipse-a-axisfield");
@@ -140,6 +138,7 @@ document
       document.getElementById("ellipse-b-axisfield").value = "";
       return;
     }
+    serial += 1;
     // add to table
     addToTable(serial, title, ellipseAreaFixed);
   });
@@ -147,20 +146,20 @@ document
 /* colors */
 
 // card-1
-mouseOver('card1');
-mouseOut('card1');
+mouseOver("card1");
+mouseOut("card1");
 // card-2
-mouseOver('card2');
-mouseOut('card2');
+mouseOver("card2");
+mouseOut("card2");
 // card-3
-mouseOver('card3');
-mouseOut('card3');
+mouseOver("card3");
+mouseOut("card3");
 // card-4
-mouseOver('card4');
-mouseOut('card4');
+mouseOver("card4");
+mouseOut("card4");
 // card-5
-mouseOver('card5');
-mouseOut('card5');
+mouseOver("card5");
+mouseOut("card5");
 // card-6
-mouseOver('card6');
-mouseOut('card6');
+mouseOver("card6");
+mouseOut("card6");

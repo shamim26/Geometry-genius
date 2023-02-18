@@ -14,8 +14,8 @@
         class="flex justify-between items-center bg-sky-100 rounded-lg py-3 px-8"
       >
         <div>
-          <h1 class="text-3xl font-bold">Interactive</h1>
-          <p class="text-xl text-slate-500">Geometry Genius</p>
+          <h1 class="text-2xl md:text-3xl font-bold">Interactive</h1>
+          <p class="md:text-xl text-slate-500">Geometry Genius</p>
         </div>
         <div>
           <button
@@ -28,14 +28,14 @@
       </div>
     </header>
     <!-- card section -->
-    <section class="flex gap-6 mt-12">
-      <div class="grid grid-cols-3 gap-6">
+    <section class="flex flex-col xl:flex-row gap-6 my-8 md:mt-12">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- card-1  -->
         <div id="card1" class="border rounded-md py-8 px-6">
           <div>
-            <img class="mx-auto mb-5" src="./images/triangle.png" alt="" />
+            <img class="mx-auto mb-4" src="./images/triangle.png" alt="" />
           </div>
-          <div class="text-center space-y-4">
+          <div class="text-center space-y-3">
             <h2 id="triangle-title" class="text-2xl font-bold">Triangle</h2>
             <p>Area (A) = 0.5 x b x h</p>
             <p>
@@ -131,7 +131,7 @@
         <!-- card-4 -->
         <div id="card4" class="border rounded-md py-8 px-6">
           <div>
-            <img class="mx-auto mb-5" src="./images/rhombus.png" alt="" />
+            <img class="mx-auto mb-4" src="./images/rhombus.png" alt="" />
           </div>
           <div class="text-center space-y-4">
             <h2 id="rhombus-title" class="text-2xl font-bold">Rhombus</h2>
@@ -229,7 +229,7 @@
           </div>
         </div>
       </div>
-      <div class="border rounded-md w-[470px] h-[400px]">
+      <div class="border rounded-md lg:w-[470px] h-[400px] md:h-[600px] lg:h-[400px]">
         <h2 class="text-xl font-bold text-center underline mt-4">
           Area Calculation
         </h2>
